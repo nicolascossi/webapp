@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Big Six</title>
+
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link href="assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- Page loader -->
+<div class="loader-wrapper">
+  <div class="d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle">
+    <div class="spinner-border text-white" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+</div>
+<!-- End loader -->
+
+<!-- Wrapper -->
+<div class="wrapper">
+  <!-- Start to page content -->
+  <div class="page-content">
+    <div class="card rounded-0 border-0">
+      <div class="card-body p-0">
+        <div class="text-center">
+          <!-- Add inline styles to control position and rotation -->
+          <img class="img-fluid" id="rotatedImage" src="assets/images/big six.png" alt=""/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End to page content -->
+</div>
+<!-- End wrapper -->
+
+<!-- JS Files -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/loader.js"></script>
+
+<script>
+  // Esperar 3 segundos (3000 milisegundos) después de que la página se haya cargado completamente
+  $(window).on('load', function() {
+    setTimeout(function() {
+      // Ocultar la sección de carga
+      $('.loader-wrapper').fadeOut();
+      
+      // Redirigir automáticamente a la siguiente página después de 3 segundos
+      window.location.href = 'authentication-splash-2.html';
+    }, 3000); // Tiempo en milisegundos (3 segundos)
+  });
+</script>
+
+</body>
+</html>
