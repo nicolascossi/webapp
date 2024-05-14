@@ -35,6 +35,7 @@ Table of index
     display: flex;
     justify-content: center;
     align-items: center;
+    rotate: -15deg;
     
 }
  /*General*/
@@ -44,6 +45,10 @@ body{
     color: #646464;
     font-family: 'Open Sans', sans-serif;
     background-color: #ED1B36;
+}
+
+.body-home {
+    background-color: #fff !important;
 }
 
 a {
@@ -76,6 +81,9 @@ a {
 }
 
 .page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 60px;
     margin-bottom: 60px;
     padding: 1rem;
@@ -303,10 +311,10 @@ a {
 }
 
 .btn-ecomm {
-    font-size: 14px;
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: 800;
-    padding: 0.5rem 1.5rem;
+    padding: 1rem 2.5rem;
     border-radius: 0;
     z-index: 6;
     margin-bottom: 16px; /* Ajusta el margen inferior para mover los botones hacia arriba */
